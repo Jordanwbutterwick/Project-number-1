@@ -16,20 +16,23 @@ body {
   margin: 0;
 }
 
-
-
 /* --------header--------- */
 header {
   background-image: url("../images/The-Woods-edited.jpg");
-  background-size: cover; 
+  background-size: cover;
   height: 90%;
 }
 
-}
 /* ----------navbar--------- */
 .shop-links {
   align-content: flex-end;
+  text-decoration: none;
 }
+
+.active {
+  text-decoration: underline antiquewhite;
+}
+
 /* ---------hero-------- */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5) 80%);
@@ -73,10 +76,13 @@ nav li {
 
 nav a {
   color: white;
+  text-decoration: none;
 }
 
 .menu-button {
   display: none;
+  background: none;
+  border: none;
 }
 
 .menu-button svg {
@@ -108,7 +114,7 @@ nav a {
     display: block;
   }
 
-  .desktop-links {
+  .nav-list {
     display: none;
   }
 }
