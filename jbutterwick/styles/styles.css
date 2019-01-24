@@ -5,3 +5,8 @@ p {
 h1 {
   font-family: "Noto Serif JP", serif;
 }
+
+.jumbotron {
+  background-image: url("./images/The-Woods-edited.jpg");
+  background-size: cover;
+}
