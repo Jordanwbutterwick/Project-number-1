@@ -18,7 +18,13 @@ body {
 
 /* --------header--------- */
 header {
-  background-image: url("../images/The-Woods-edited.jpg");
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 10%,
+      rgba(255, 255, 255, 0.05) 51%,
+      rgba(0, 0, 0, 0.5) 80%
+    ),
+    url("../images/The-Woods-edited.jpg");
   background-size: cover;
   height: 90%;
 }
@@ -36,29 +42,39 @@ header {
 /* ---------hero-------- */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5) 80%);
-  height: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-content {
   color: antiquewhite;
-  margin: 0 auto;
-  max-width: 900px;
-  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.hero-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 nav {
   width: 100%;
-  height: 100px;
+  height: 50px;
   color: antiquewhite;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  align-items: center;
 }
+
 .logo {
   height: 40px;
   width: 40px;
   margin-left: 50px;
+}
+.nav-list li {
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul {
@@ -66,8 +82,9 @@ nav ul {
   margin-right: 50px;
   padding: 0;
   display: flex;
+  flex-direction: row;
   width: 300px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav li {
@@ -79,10 +96,16 @@ nav a {
   text-decoration: none;
 }
 
+.shop-links {
+  display: flex;
+  justify-content: space-around;
+}
+
 .menu-button {
   display: none;
   background: none;
   border: none;
+  padding-right: 25px;
 }
 
 .menu-button svg {
@@ -119,6 +142,123 @@ nav a {
   }
 }
 
+/* ------product cards ------- */
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.shop-title {
+  display: flex;
+  justify-content: center;
+}
+
+.product-card {
+  height: 350px;
+  width: 350px;
+  margin: 30px 15px;
+  background: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s;
+}
+
+.product-card h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 2em;
+  opacity: 0;
+  transform: translate(0, 60px);
+  transition: 0.35s;
+}
+
+.product-card:hover h1 {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fruits {
+  background: url("../images/fruitimage-fixed.jpg");
+  transition: 0.3s;
+}
+
+.fruits:hover {
+  background: linear-gradient(
+      33deg,
+      RGBA(227, 255, 231, 0.5) 0%,
+      RGBA(217, 231, 255, 0.5) 100%
+    ),
+    url("../images/fruitimage-fixed.jpg");
+}
+.vegetables {
+  background: url("../images/vegetableimage-fixed.jpg");
+  transition: 0.3s;
+}
+
+.vegetables:hover {
+  background: linear-gradient(
+      33deg,
+      RGBA(227, 255, 231, 0.5) 0%,
+      RGBA(217, 231, 255, 0.5) 100%
+    ),
+    url("../images/vegetableimage-fixed.jpg");
+}
+.flowers {
+  background: url("../images/flowersimage-fixed.jpg");
+  transition: 0.3s;
+}
+
+.flowers:hover {
+  background: linear-gradient(
+      33deg,
+      RGBA(227, 255, 231, 0.5) 0%,
+      RGBA(217, 231, 255, 0.5) 100%
+    ),
+    url("../images/flowersimage-fixed.jpg");
+}
+.herbs {
+  background: url("../images/herbsimage-fixed.jpg");
+  transition: 0.3s;
+}
+
+.herbs:hover {
+  background: linear-gradient(
+      33deg,
+      RGBA(227, 255, 231, 0.5) 0%,
+      RGBA(217, 231, 255, 0.5) 100%
+    ),
+    url("../images/herbsimage-fixed.jpg");
+}
+
+.tropicals {
+  background: url("../images/tropicalsimage-fixed.jpg");
+  transition: 0.3s;
+}
+
+.tropicals:hover {
+  background: linear-gradient(
+      33deg,
+      RGBA(227, 255, 231, 0.5) 0%,
+      RGBA(217, 231, 255, 0.5) 100%
+    ),
+    url("../images/tropicalsimage-fixed.jpg");
+}
+.landscaping {
+  background: url("../images/landscapingimage-fixed.jpg");
+  transition: 0.3s;
+}
+
+.landscaping:hover {
+  background: linear-gradient(
+      33deg,
+      RGBA(227, 255, 231, 0.5) 0%,
+      RGBA(217, 231, 255, 0.5) 100%
+    ),
+    url("../images/landscapingimage-fixed.jpg");
+}
 /* ---------footer--------- */
 .ftr-wrapper {
   display: flex;
