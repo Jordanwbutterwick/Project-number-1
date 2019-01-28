@@ -20,13 +20,14 @@ body {
 header {
   background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5) 10%,
-      rgba(255, 255, 255, 0.05) 51%,
-      rgba(0, 0, 0, 0.5) 80%
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(255, 255, 255, 0.05) 11%,
+      rgba(0, 0, 0, 0.5) 100%
     ),
     url("../images/The-Woods-edited.jpg");
   background-size: cover;
-  height: 90%;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* ----------navbar--------- */
@@ -67,14 +68,16 @@ nav {
   justify-content: space-between;
 }
 
-.logo {
+.navbar-brand {
   height: 40px;
-  width: 40px;
+  width: 150px;
   margin-left: 50px;
 }
 .nav-list li {
   display: flex;
   justify-content: space-around;
+  padding: 25px;
+  width: 40px;
 }
 
 nav ul {
@@ -105,7 +108,7 @@ nav a {
   display: none;
   background: none;
   border: none;
-  padding-right: 25px;
+  margin-right: 25px;
 }
 
 .menu-button svg {
@@ -263,15 +266,19 @@ nav a {
 .ftr-wrapper {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-around;
   padding: 25px;
+  max-width: 1200px;
 }
 
 .ftr-wrapper ul {
-  padding: 0;
   display: flex;
-  width: 300px;
+  width: 100px;
   list-style: none;
+}
+
+.footer-box {
+  display: flex;
 }
 
 footer a {
@@ -297,6 +304,7 @@ footer a:hover {
 
 .icon-box {
   display: flex;
+  padding: 0;
 }
 
 .icon-box .fab {
