@@ -262,6 +262,16 @@ nav a {
     ),
     url("../images/landscapingimage-fixed.jpg");
 }
+
+/* -----------------Main content----------- */
+.full-text-container {
+  margin: 0 auto;
+}
+
+.text {
+  text-align: center;
+}
+
 /* ---------footer--------- */
 .ftr-wrapper {
   display: flex;
