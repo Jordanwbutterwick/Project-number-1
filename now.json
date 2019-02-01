@@ -1,5 +1,5 @@
 {
   "version": 2,
   "builds": [{ "use": "@now/static" }],
-  "alias": ["jordanwb.design", "www.jordanwb.design"]
+  "alias": ["mossystonenursery.ca", "www.mossystonenursery.ca"]
 }
