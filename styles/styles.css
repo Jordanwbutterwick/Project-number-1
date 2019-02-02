@@ -43,7 +43,7 @@ header {
 /* ---------hero-------- */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5) 80%);
-  height: 50vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -51,21 +51,65 @@ header {
 .hero-content {
   color: antiquewhite;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 40%;
+  background-image: radial-gradient(rgba(0, 0, 0, 1));
 }
+
+.hero-button {
+  background: rgba(255, 255, 255, 0.733);
+  border: solid white 1px;
+  border-radius: 25px;
+  width: 190px;
+  height: 50px;
+  color: black;
+  font-size: 1.4em;
+  transition: 0.5s ease-in-out;
+}
+
+.hero-content p {
+  color: white;
+}
+.hero-button a {
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+.hero-content h1 {
+  color: white;
+  font-size: 3em;
+}
+
 .hero-title {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: flex-end;
 }
+
+.hero-button:hover {
+  background: white;
+}
+
+/* ---------------Nav Bar--------------- */
 
 nav {
   width: 100%;
   height: 50px;
   color: antiquewhite;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+nav h1 {
+  font-family: "Noto Serif JP", serif;
+}
+
+nav li {
+  font-family: "Roboto Slab", sans-serif;
 }
 
 .navbar-brand {
@@ -286,6 +330,11 @@ nav a {
 }
 
 /* ---------footer--------- */
+
+footer li {
+  font-family: "Roboto Slab", sans-serif;
+}
+
 .ftr-wrapper {
   display: flex;
   margin: 0 auto;
@@ -306,6 +355,7 @@ nav a {
 
 footer a {
   color: #2d2d2d;
+  text-decoration: none;
 }
 
 footer a:hover {
