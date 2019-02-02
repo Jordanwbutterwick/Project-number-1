@@ -266,10 +266,23 @@ nav a {
 /* -----------------Main content----------- */
 .full-text-container {
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 .text {
   text-align: center;
+}
+
+.faq ul {
+  list-style: none;
+}
+
+.faq h1 {
+  font-size: 1.5em;
+}
+
+.faq {
+  margin-top: 150px;
 }
 
 /* ---------footer--------- */
